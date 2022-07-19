@@ -73,18 +73,20 @@ class LinkedList:
         return self.size
 
 
+# O(1) Time | O(k) Space
+# Where k is its capacity
 class LruStructure:
     def __init__(self, capacity):
         self.capacity = capacity
         self.cache = {}
         self.cache_vals = LinkedList()
 
+    # O(1) Time
     def set(self, key, value):
         if key not in self.cache:
             if self.cache_vals.get_size() >= self.capacity:
                 old_head = self.cache_vals.remove_head()
                 del self.cache[old_head.key]
-
             self.cache_vals.insert_at_tail(key, value)
             node = self.cache_vals.get_tail()
             self.cache[key] = node
@@ -95,6 +97,7 @@ class LruStructure:
             self.cache_vals.insert_at_tail(key, value)
             self.cache[key] = self.cache_vals.get_tail()
 
+    # O(1) Time
     def get(self, key):
         if key not in self.cache:
             return None
