@@ -35,6 +35,8 @@ class LinkedList(object):
             self.tail = node.prev
         node.next, node.prev = None, None
 
+# O(1) Time | O(k) Space
+
 
 class LruStructure:
     def __init__(self, capacity):
@@ -44,6 +46,7 @@ class LruStructure:
         self.freq_dict = collections.defaultdict(LinkedList)
         self.key_dict = {}
 
+    # O(1) Time
     def get(self, key):
         if key not in self.key_dict:
             return None
@@ -61,6 +64,7 @@ class LruStructure:
 
         return self.key_dict[key].val
 
+    # O(1) Time
     def set(self, key, value):
         if self.get(key) != None:
             self.key_dict[key].val = value
