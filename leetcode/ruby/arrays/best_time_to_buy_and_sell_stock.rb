@@ -1,5 +1,6 @@
 # @param {Integer[]} prices
 # @return {Integer}
+# O(n) Time complexity | O(1) Space complexity
 def max_profit(prices)
   return 0 unless prices.length
 

@@ -1,6 +1,7 @@
 # @param {Integer[]} nums
 # @param {Integer} target
 # @return {Integer}
+# O(logn) Time complexity | O(1) Space complexity
 def search_insert(nums, target)
   left = 0
   right = nums.length - 1

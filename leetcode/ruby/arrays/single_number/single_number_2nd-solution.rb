@@ -1,5 +1,6 @@
 # @param {Integer[]} nums
 # @return {Integer}
+# O(nlogn) Time complexity | O(1) Space complexity
 def single_number(nums)
   nums.sort!
 

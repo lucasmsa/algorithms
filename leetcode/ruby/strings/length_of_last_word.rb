@@ -1,5 +1,6 @@
 # @param {String} s
 # @return {Integer}
+# O(n) Time complexity | O(1) Space complexity
 def length_of_last_word(s)
   last_space_before_word_index = -1
   first_space_after_word_index = -1

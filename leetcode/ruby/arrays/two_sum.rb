@@ -1,6 +1,7 @@
 # @param {Integer[]} nums
 # @param {Integer} target
 # @return {Integer[]}
+# O(n) Time complexity | O(n) Space complexity
 def two_sum(nums, target)
   indexes_map = {}
 

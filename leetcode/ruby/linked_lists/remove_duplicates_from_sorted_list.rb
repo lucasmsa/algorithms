@@ -10,6 +10,7 @@ end
 
 # @param {ListNode} head
 # @return {ListNode}
+# O(n) Time complexity | O(1) Space complexity
 def delete_duplicates(head)
   current_head = head
 

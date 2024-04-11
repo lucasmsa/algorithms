@@ -1,5 +1,6 @@
 # @param {Integer[]} nums
 # @return {Integer}
+# O(n) Time complexity | O(n) Space complexity
 def single_number(nums)
   digits = {}
   nums.each do |number|

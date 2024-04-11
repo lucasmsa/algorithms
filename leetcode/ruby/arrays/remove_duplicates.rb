@@ -1,5 +1,6 @@
 # @param {Integer[]} nums
 # @return {Integer}
+# O(n) Time complexity | O(1) Space complexity
 def remove_duplicates(nums)
   return 0 if nums.empty?
 

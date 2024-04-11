@@ -1,3 +1,4 @@
+# O(n) Time complexity | O(1) Space complexity
 def remove_element(nums, val)
   number_of_non_val_values = 0
   index_of_filtered_array = 0
