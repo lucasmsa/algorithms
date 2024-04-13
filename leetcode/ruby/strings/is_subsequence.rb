@@ -2,7 +2,7 @@
 # @param {String} t
 # @return {Boolean}
 def is_subsequence(s, t)
-  return true if s.length.zero?
+  return true if s.empty?
 
   s_pointer = 0
 
@@ -14,5 +14,5 @@ def is_subsequence(s, t)
     end
   end
 
-  !(s_pointer < s.length)
+  s_pointer >= s.length
 end
