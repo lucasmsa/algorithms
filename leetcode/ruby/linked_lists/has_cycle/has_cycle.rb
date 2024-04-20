@@ -16,12 +16,13 @@ def hasCycle(head)
   return false unless head
 
   current_head = head
+  cycle_node = ListNode.new(CYCLE_VALUE)
 
   until current_head.next.nil?
     return true if current_head.next.val == CYCLE_VALUE
 
     temp_next = current_head.next
-    current_head.next = ListNode.new(CYCLE_VALUE)
+    current_head.next = cycle_node
     current_head = temp_next
   end
 
