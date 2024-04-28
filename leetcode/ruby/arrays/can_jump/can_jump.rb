@@ -1,5 +1,6 @@
 # @param {Integer[]} nums
 # @return {Boolean}
+# O(n^2) Time | O(1) Space
 def can_jump(nums)
   return true if nums.empty? || (nums.length == 1 && nums[0].zero?)
 
